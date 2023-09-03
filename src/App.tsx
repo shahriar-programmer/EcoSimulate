@@ -12,15 +12,15 @@ function App() {
   };
 
   return (
-    <div className='max-h-screen h-full w-full'>
-      <div className='w-full h-20 bg-blue-400 flex justify-between items-center px-44'>
-        <div className="logo text-3xl text-white font-semibold">Forest Futurist</div>
-        <div className='flex gap-x-8 text-white text-lg font-semibold'>
-          <a href="#" className='transition px-6 py-1 border rounded bg-transparent hover:bg-blue-600/50'>About</a>
-          <a href="#" className='transition px-6 py-1 border rounded bg-transparent hover:bg-blue-600/50'>Github</a>
+    <div className='w-full h-full max-h-screen'>
+      <div className='flex items-center justify-between w-full h-20 bg-blue-400 px-44'>
+        <div className="text-3xl font-semibold text-white logo">EcoSimulate</div>
+        <div className='flex text-lg font-semibold text-white gap-x-8'>
+          <a href="#" className='px-6 py-1 transition bg-transparent border rounded hover:bg-blue-600/50'>About</a>
+          <a href="#" className='px-6 py-1 transition bg-transparent border rounded hover:bg-blue-600/50'>Github</a>
         </div>
       </div>
-      <div className='w-full h-full flex'>
+      <div className='flex w-full h-full'>
         <div className='w-1/4 h-full'>Sidebar</div>
         <div style={{ height: '91vh', width: '100%' }}>
       <GoogleMapReact
