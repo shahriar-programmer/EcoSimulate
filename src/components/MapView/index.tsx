@@ -11,7 +11,7 @@ export default function MapView() {
       };
 
   return (
-    <div style={{ height: '91vh', width: '100%' }}>
+    <div style={{ height: '91.5vh', width: '100%' }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
