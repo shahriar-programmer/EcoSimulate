@@ -1,9 +1,7 @@
 import SimulatorControl from "./SimulatorControl"
 import StatisticsCard from "./StatisticsCard"
 
-type Props = {}
-
-export default function TreeSimulator({ }: Props) {
+export default function TreeSimulator() {
     return (
         <div className="flex flex-col mb-12 overflow-y-scroll gap-y-2">
             <div className="flex items-center mt-2 text-gray-600">

@@ -149,12 +149,14 @@ export default function ImpactCalculator() {
         const peopleCanBreath = oxygenProduction / treePeopleRespirationRate;
         const waterEvaporated = treesData[treeType]?.waterEvaporationRate * height * diameter;
 
-        return {
+        const res: ImpactProps = {
             carbonImpact: carbonImpact,
             oxygenProduction: oxygenProduction,
             peopleCanBreath: peopleCanBreath,
             waterEvaporated: waterEvaporated
-        };
+        }
+
+        return res
 
     }
 

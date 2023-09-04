@@ -3,7 +3,7 @@ import { ImpactProps } from "."
 
 type Props = {
     setImpactResult: React.Dispatch<React.SetStateAction<ImpactProps>>,
-    calculateTreeImpact: (treeType: string, height: number, diameter: number) => void
+    calculateTreeImpact: (treeType: string, height: number, diameter: number) => ImpactProps
 }
 
 export default function ImpactForm({ calculateTreeImpact, setImpactResult }: Props) {
@@ -11,7 +11,7 @@ export default function ImpactForm({ calculateTreeImpact, setImpactResult }: Pro
     const [height, setHeight] = useState(0)
     const [diameter, setDiameter] = useState(0)
 
-    const calculateFunction = (e) => {
+    const calculateFunction = (e: React.FormEvent<EventTarget>) => {
         e.preventDefault();
         const res = calculateTreeImpact(treeType, height, diameter);
         setImpactResult(res);

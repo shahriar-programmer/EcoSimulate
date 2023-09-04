@@ -1,9 +1,6 @@
 import { useState } from "react"
-import StatisticsCard from "./StatisticsCard"
 
-type Props = {}
-
-export default function SimulatorControl({ }: Props) {
+export default function SimulatorControl() {
   const [temperatureValue, setTemperatureValue] = useState(68)
   const [aqiValue, setAQIvalue] = useState(38)
   const [pm2Value, setPM2Value] = useState(72)
