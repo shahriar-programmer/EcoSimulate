@@ -2,11 +2,12 @@ import CarbonDioxideChart from "./CarbonDioxideChart";
 import GlobalTemperatureChart from "./GlobalTemperatureChart";
 import MethaneChart from "./MethaneChart";
 import SeaLevelChart from "./SeaLevelChart";
+import dataBG from "../../assets/data-bg.webp";
 
 export default function DataVisualization() {
 
   return (
-    <div className="w-full h-full p-4" style={{ background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/data-bg.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="w-full h-full p-4" style={{ background: `linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("${dataBG}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="grid w-full h-full min-h-screen grid-cols-2 gap-4">
       <div className="flex flex-col py-4 bg-white rounded">
         <p className="pb-4 pl-4 text-2xl font-bold text-center text-orange-500">Carbon Dioxide</p>
