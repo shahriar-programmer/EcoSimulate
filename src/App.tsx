@@ -5,6 +5,7 @@ import Header from './components/root/Header';
 import Sidebar from './components/root/Sidebar';
 import TreeSimulator from './components/TreeSimulator';
 import DataVisualization from './components/DataVisualization';
+import ImpactCalculator from './components/ImpactCalculator';
 
 export type PageProps = "/tree-simulator" | "/impact-calculator" | "/data-visualization" | "/about" | "/github" | "/";
 
@@ -21,8 +22,10 @@ function App() {
           ) : null
         }
         {
-          page == "/impact-calculator" || page == "/tree-simulator" ? (
+          page == "/tree-simulator" ? (
             <MapView/>
+          ) : page == "/impact-calculator" ? (
+            <ImpactCalculator/> 
           ) : page == "/data-visualization" ? (
             <DataVisualization/>
           ) : null
