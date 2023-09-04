@@ -161,7 +161,7 @@ export default function ImpactCalculator() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-full min-h-[91.5vh] p-4" style={{ background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("src/assets/impact-bg.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="flex flex-col items-center justify-center w-full h-full min-h-[91.5vh] p-4" style={{ background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/impact-bg.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="flex items-center w-full h-full justify-evenly">
                 <ImpactForm setImpactResult={setImpactResult} calculateTreeImpact={calculateTreeImpact} />
                 <ImpactResult impactResult={impactResult} />

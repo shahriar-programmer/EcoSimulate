@@ -14,7 +14,7 @@ export default function Sidebar({children}: Props) {
       <div className="flex border-2 rounded">
         <input type="search" name="location" id="location" placeholder="Search Location...." className="w-full h-10 p-2 text-lg text-gray-600 border-r-2"/>
         <button className="px-2 transition hover:bg-gray-200/40">
-            <img src="src/assets/icon-search.svg" alt="" className="" width={"30px"} height={"30px"}/>
+            <img src="../../assets/icon-search.svg" alt="" className="" width={"30px"} height={"30px"}/>
         </button>
         </div>
         {children}
