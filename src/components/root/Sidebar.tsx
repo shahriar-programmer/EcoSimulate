@@ -1,6 +1,6 @@
 import { ReactElement, useState } from "react"
-import leftArrowIcon from "src/assets/icon-arrow-left.png";
-import rightArrowIcon from "src/assets/icon-arrow-right.png";
+import leftArrowIcon from "../../assets/icon-arrow-left.png";
+import rightArrowIcon from "../../assets/icon-arrow-left.png";
 
 type Props = {
     children: ReactElement
