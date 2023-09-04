@@ -1,4 +1,6 @@
 import { ReactElement, useState } from "react"
+import leftArrowIcon from "src/assets/icon-arrow-left.png";
+import rightArrowIcon from "src/assets/icon-arrow-right.png";
 
 type Props = {
     children: ReactElement
@@ -19,9 +21,9 @@ export default function Sidebar({children}: Props) {
         <div className="absolute z-10 p-2 bg-white border rounded-full cursor-pointer -right-4 top-1/2" onClick={() => setShowSidebar(prevValues => !prevValues)}>
           {
             showSidebar ? (
-            <img src="src/assets/icon-arrow-left.png" alt="" width={"30px"} height={"30px"}/>
+            <img src={leftArrowIcon} alt="" width={"30px"} height={"30px"}/>
             ) : (
-            <img src="src/assets/icon-arrow-right.png" alt="" width={"30px"} height={"30px"}/>
+            <img src={rightArrowIcon} alt="" width={"30px"} height={"30px"}/>
             )
           }
         </div>
