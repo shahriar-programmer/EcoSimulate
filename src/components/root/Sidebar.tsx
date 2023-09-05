@@ -4,17 +4,18 @@ import rightArrowIcon from "../../assets/icon-arrow-left.png";
 import searchIcon from "../../assets/icon-search.svg";
 
 type Props = {
-    children: ReactElement
+    children: ReactElement,
+    setShowLocation: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function Sidebar({children}: Props) {
+export default function Sidebar({children,setShowLocation}: Props) {
   const [showSidebar, setShowSidebar] = useState(true);
 
   return (
     <div className={`transition ${showSidebar ? 'w-1/4' : 'w-0'} p-4 text-gray-700 relative`}>
       <div className="flex border-2 rounded">
         <input type="search" name="location" id="location" placeholder="Search Location...." className="w-full h-10 p-2 text-lg text-gray-600 border-r-2"/>
-        <button className="px-2 transition hover:bg-gray-200/40">
+        <button className="px-2 transition hover:bg-gray-200/40" onClick={() => setShowLocation(true)}>
             <img src={searchIcon} alt="" className="" width={"30px"} height={"30px"}/>
         </button>
         </div>

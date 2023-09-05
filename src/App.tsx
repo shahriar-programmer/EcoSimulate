@@ -11,6 +11,7 @@ export type PageProps = "/tree-simulator" | "/impact-calculator" | "/data-visual
 
 function App() {
   const [page, setPage] = useState<PageProps>("/tree-simulator");
+  const [showLocation, setShowLocation] = useState(false);
 
   return (
     <div className='w-full h-full min-h-screen overflow-hidden'>
@@ -18,12 +19,12 @@ function App() {
       <div className='flex w-full h-full'>
         {
           page == '/tree-simulator' ? (
-            <Sidebar children={<TreeSimulator/>} />
+            <Sidebar children={<TreeSimulator/>} setShowLocation={setShowLocation}/>
           ) : null
         }
         {
           page == "/tree-simulator" ? (
-            <MapView/>
+            <MapView showLocation={showLocation}/>
           ) : page == "/impact-calculator" ? (
             <ImpactCalculator/> 
           ) : page == "/data-visualization" ? (
